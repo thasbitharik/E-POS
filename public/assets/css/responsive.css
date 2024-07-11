@@ -1,0 +1,72 @@
+/* For XXL Screen (768p(1366 x 768) above - 1080p , 1920 x 1080) */
+@media (min-width: 1399.99px) {}
+
+/* For XL Screen (Laptop - HD Ready Display) */
+@media only screen and (min-width: 1199.9px) and (max-width: 1399.98px) {}
+
+/* For LG (Large) Screen  */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+/* For MD (Medium) Screen (ipad) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+/* For SM (Small) Screen (Tab) */
+@media (min-width: 576px) and (max-width: 767px) {}
+
+/* For Mobile Screen */
+@media (max-width: 575px) {
+    .date-time {
+        display: none;
+    }
+
+    .table-top-area {
+        flex-direction: column;
+        row-gap: 10px;
+        align-items: flex-start;
+    }
+
+    .table-top-area .table-title {
+        width: 100%;
+        font-size: 18px !important;
+    }
+
+    .table-top-area nav {
+        align-self: flex-end;
+    }
+
+    .main-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .note-for-transfer h6 {
+        line-height: 1.6em;
+    }
+
+    .not-transferd-area.custom {
+        overflow-x: auto;
+    }
+
+    .not-transferd-area.custom::-webkit-scrollbar {
+        display: none !important;
+    }
+
+    .breadcrumb {
+        row-gap: 10px;
+    }
+
+    .barcode-print tr {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .barcode-print tr td div {
+        margin-left: 0 !important;
+    }
+
+    .existing-bcode-area {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+}
